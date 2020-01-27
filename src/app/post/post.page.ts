@@ -22,11 +22,11 @@ export class PostPage implements OnInit {
 	}
 	likePost(post:any){
 		if(this.post.like){
-			this.post.quantLikes-=1;
+			this.post.quantLikes--;
 			this.post.like = false;
 		}
 		else{
-			this.post.quantLikes+=1;
+			this.post.quantLikes++;
 			this.post.like = true;
 		}
 	}

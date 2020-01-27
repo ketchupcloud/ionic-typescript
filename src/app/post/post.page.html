@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+	<ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+		Post
+	</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card class="welcome-card">
+		<img src="/assets/shapes.svg" alt=""/>
+		<ion-card-header>
+		<p> {{post.username}} </p>
+		</ion-card-header>
+		<ion-icon size="large" name="heart" (click)="likePost(post)"
+			color="{{post.like ? 'primary' : 'secondary'}}">
+		</ion-icon>
+		<ion-card-content> 
+			<p>{{post.textContents}}</p>
+		</ion-card-content>
+	</ion-card>
+	
+	
+</ion-content>

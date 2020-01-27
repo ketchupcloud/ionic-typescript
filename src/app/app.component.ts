@@ -24,6 +24,10 @@ export class AppComponent {
 	{	title: 'About Us',
 		url: '/aboutus',
 		icon: 'beer'
+	},
+	{	title: 'Post',
+		url: '/post',
+		icon: 'like'
 	}
   ];
 

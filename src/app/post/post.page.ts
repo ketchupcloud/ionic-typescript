@@ -20,7 +20,7 @@ export class PostPage implements OnInit {
 		replies: 'boba',
 		time: '16h30min12seg'
 	}
-	likePost(post:any){
+	/* likePost(post:any){
 		if(this.post.like){
 			this.post.quantLikes--;
 			this.post.like = false;
@@ -30,7 +30,7 @@ export class PostPage implements OnInit {
 			this.post.like = true;
 		}
 	}
-	
+	 */
   ngOnInit() {
   }
 

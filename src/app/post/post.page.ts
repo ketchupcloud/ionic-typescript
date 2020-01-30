@@ -10,27 +10,33 @@ export class PostPage implements OnInit {
   constructor() {}
 	 post:object = {
 		username: 'Jubs',
-		textContents: 'texto teste',
+		textContents: 'SPOILERS!!!!!!!!!!!!!!!!!!!!!',
 		annex: null,
-		/* quantLikes: 2,
-		quantDislikes: 1, */
 		like: false,
 		quantLikes: 0,
 		episode: 9,
 		replies: 'boba',
-		time: '16h30min12seg'
+		time: '16h30min12seg',
+		spoiler: true
 	}
-	/* likePost(post:any){
-		if(this.post.like){
-			this.post.quantLikes--;
-			this.post.like = false;
+	likePost(post:any){
+		if(post.like){
+			post.quantLikes--;
+			post.like = false;
 		}
 		else{
-			this.post.quantLikes++;
-			this.post.like = true;
+			post.quantLikes++;
+			post.like = true;
 		}
 	}
-	 */
+
+	spoilerAlert(post:any){
+		if(post.spoiler){
+
+		}
+
+	}
+	
   ngOnInit() {
   }
 

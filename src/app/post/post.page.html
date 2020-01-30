@@ -10,18 +10,21 @@
 </ion-header>
 
 <ion-content>
-	<!-- <ion-card class="welcome-card">
+	<ion-card class="welcome-card">
 		<img src="/assets/shapes.svg" alt=""/>
 		<ion-card-header>
-		<p>  </p>
 		</ion-card-header>
-		<ion-icon size="large" name="heart" (click)="likePost(post)"
-			color="{{post.like ? 'primary' : 'secondary'}}">-
-		</ion-icon>
-		<ion-card-content> 
-			<p>oi</p>
+		<ion-card-content>
+			<h2> Julia Lima </h2>
+			<ion-icon size="large" name="heart" (click)="likePost(post)"
+				color="{{post.like ? 'primary' : 'secondary'}}">-
+			</ion-icon>
+			<ion-title *ngIf="post.spoiler">Alerta de spoiler!</ion-title>
 		</ion-card-content>
+		<p>A spoiler is an element of a disseminated summary or description of any piece of fiction that reveals
+			any plot elements which threaten to give away important details. Typically, the details of the conclusion
+			of the plot, including the climax and ending, are especially regarded as spoiler material.</p>
 	</ion-card>
-	 -->
+	
 	
 </ion-content>

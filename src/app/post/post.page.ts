@@ -8,17 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class PostPage implements OnInit {
 
   constructor() {}
-	 post:object = {
+	Posts= [{
 		username: 'Jubs',
-		textContents: 'SPOILERS!!!!!!!!!!!!!!!!!!!!!',
-		annex: null,
 		like: false,
 		quantLikes: 0,
-		episode: 9,
-		replies: 'boba',
-		time: '16h30min12seg',
 		spoiler: true
-	}
+	},
+	{
+		username: 'Tef',
+		like: true,
+		quantLikes: 25,
+		spoiler: false
+	}];
+	
 	likePost(post:any){
 		if(post.like){
 			post.quantLikes--;
@@ -28,13 +30,6 @@ export class PostPage implements OnInit {
 			post.quantLikes++;
 			post.like = true;
 		}
-	}
-
-	spoilerAlert(post:any){
-		if(post.spoiler){
-
-		}
-
 	}
 	
   ngOnInit() {

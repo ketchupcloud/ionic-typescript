@@ -8,8 +8,12 @@ import { PostPageRoutingModule } from './post-routing.module';
 
 import { PostPage } from './post.page';
 
+import { ComponentsModule } from '../components.module';
+
+
 @NgModule({
   imports: [
+	ComponentsModule,
     CommonModule,
     FormsModule,
     IonicModule,

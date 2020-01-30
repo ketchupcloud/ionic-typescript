@@ -18,10 +18,14 @@
 		</ion-card-header>
 		<ion-card-content>
 			<h2> {{post.username}} </h2>
-			<ion-icon size="large" name="heart" (click)="likePost(post)"
-				color="{{post.like ? 'primary' : 'secondary'}}">-
+			<ion-icon size="large" name="thumbs-up" (click)="likePost(post)"
+				color="{{post.statusLike===true ? 'secondary' : 'dark'}}">
 			</ion-icon>
-			<ion-title>{{post.quantLikes}}</ion-title>	
+			<ion-icon size="large" name="thumbs-down" (click)="dislikePost(post)"
+				color="{{post.statusLike===false ? 'primary' : 'dark'}}">
+			</ion-icon>
+			<h1>Likes:{{post.quantLikes}}</h1>	
+			<h1>Dislikes:{{post.quantDislikes}}</h1>	
 		</ion-card-content>
 		<p>A spoiler is an element of a disseminated summary or description of any piece of fiction that reveals
 			any plot elements which threaten to give away important details. Typically, the details of the conclusion
